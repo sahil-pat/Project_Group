@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="25dp">
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/connectionImage"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ConnectionName"
+                android:text="Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionHeading"
+                android:layout_below="@+id/ConnectionName"
+                android:text="Description:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/connectionDetail"
+                android:layout_below="@id/descriptionHeading"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toLeftOf="@+id/connectionImage"
+                android:text="abc"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qualificationHeading2"
+                android:layout_below="@+id/connectionDetail"
+                android:text="Qualification:"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/connectionQualification"
+                android:layout_below="@id/qualificationHeading2"
+                android:layout_toLeftOf="@+id/connectionImage"
+
+                android:text="abc"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="8dp"/>
+            <ImageButton
+                android:layout_width="62dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_message"
+                android:id="@+id/connectionMsgImg"
+                android:layout_below="@+id/connectionImage"/>
+
+            <TextView
+                android:id="@+id/previousMessagesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/connectionMsgImg"
+                android:padding="8dp"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/LoginTextInputOuterFieldStyle"
+                android:id="@+id/connectionMessageLayout"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@+id/connectionImage"
+                android:layout_toRightOf="@+id/connectionMsgImg">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/connectionMessage"
+                    style="@style/LoginTextInputInnerFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Messages"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_page_background"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#257525"
+        android:alpha="0.9"/>
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:text="MY CONNECTIONS"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:layout_margin="20dp"
+        android:id="@+id/connectionListHeading"
+        android:backgroundTint="@color/twitter_blue"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/connectionListHeading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/connectionRecycleView"
+        tools:listitem="@layout/connection_list_style"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/connectionPageBackButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_back"/>
+
+</RelativeLayout>
