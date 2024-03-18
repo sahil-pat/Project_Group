@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "478045414790",
+    "firebase_url": "https://cloudhirepro-default-rtdb.firebaseio.com",
+    "project_id": "cloudhirepro",
+    "storage_bucket": "cloudhirepro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478045414790:android:f0df44aff9533a9f67b807",
+        "android_client_info": {
+          "package_name": "com.example.cloudhirepro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyHDZB-yJ7DO8NjFc9r2aBGG5ABNsozp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

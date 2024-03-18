@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <objectAnimator
+            android:propertyName="text"
+            android:valueTo="Applied"
+            android:duration="500"
+            />
+        <objectAnimator
+            android:propertyName="backgroundTint"
+            android:valueTo="@color/twitter_blue"
+            android:duration="500"
+            />
+    </item>
+    <item>
+        <objectAnimator
+            android:propertyName="text"
+            android:valueTo="Apply"
+            android:duration="500"
+            />
+        <objectAnimator
+            android:propertyName="backgroundTint"
+            android:valueTo="@color/my_secondary"
+            android:duration="500"
+            />
+    </item>
+</selector>
