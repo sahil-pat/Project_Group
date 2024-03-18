@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="25dp">
+
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/candidateImage"
+                android:src="@drawable/ic_launcher_background"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/candidateName"
+                android:text="Candidate Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/candidateImage"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailHeading"
+                android:layout_below="@+id/candidateName"
+                android:layout_toRightOf="@id/candidateImage"
+                android:layout_marginLeft="15dp"
+                android:text="Description:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/candidateDetails"
+                android:layout_below="@id/detailHeading"
+                android:layout_toRightOf="@id/candidateImage"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="8dp"
+                android:text="abc"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qualificationHeading"
+                android:layout_below="@+id/candidateDetails"
+                android:layout_toRightOf="@id/candidateImage"
+                android:layout_marginLeft="15dp"
+                android:text="Qualification:"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/candidateQualification"
+                android:layout_below="@id/qualificationHeading"
+                android:text="abc"
+                android:layout_toRightOf="@id/candidateImage"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/candidateSkillName1"
+                android:layout_below="@+id/candidateQualification"
+                android:layout_toRightOf="@id/candidateImage"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/candidateSkillLevel1"
+                android:layout_below="@+id/candidateQualification"
+                android:layout_toRightOf="@id/candidateImage"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/candidateSkillName2"
+                android:layout_below="@+id/candidateQualification"
+                android:layout_toRightOf="@id/candidateImage"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/candidateSkillLevel2"
+                android:layout_below="@+id/candidateQualification"
+                android:layout_toRightOf="@id/candidateImage"
+                android:layout_marginLeft="15dp"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
